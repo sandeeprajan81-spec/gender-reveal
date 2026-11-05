@@ -14,4 +14,7 @@ async function choose(g){if(busy)return;const n=$('guest').value.trim();if(!n){$
 function openBox(){if(opened)return;opened=true;$('gift').classList.add('opening');$('open').disabled=true;hearts(45);setTimeout(()=>{stage('reveal');$('title').textContent='Our Little Miracle';$('subtitle').textContent='The sweetest surprise!';$('result').textContent=selected==='Boy'?'You guessed right, '+name+'! 🎉':'Surprise, '+name+'! 💙';hearts(100);setTimeout(()=>hearts(45),1000)},1200)}
 $('boy').addEventListener('click',()=>choose('Boy'));$('girl').addEventListener('click',()=>choose('Girl'));$('gift').addEventListener('click',openBox);$('open').addEventListener('click',openBox);$('again').addEventListener('click',()=>{clearInterval(interval);opened=false;busy=false;$('gift').classList.remove('opening');$('open').disabled=false;$('boy').disabled=$('girl').disabled=false;$('title').textContent='Boy or Girl?';$('subtitle').textContent='Make your guess before the surprise!';$('particles').innerHTML='';stage('entry')});
 })();
+throw Error('Unable to save your guess. Please try again.')
+  $('error').textContent='Could not record your guess. Check your connection and try again.';
+  $('subtitle').textContent='One magical box. One big secret.';
 </script></body></html>
