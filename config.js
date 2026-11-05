@@ -1,5 +1,5 @@
 
 window.BABY_REVEAL_CONFIG = {
-  supabaseUrl: "YOUR_SUPABASE_PROJECT_URL",
-  supabaseAnonKey: "YOUR_SUPABASE_PUBLISHABLE_KEY"
+  supabaseUrl: "https://cwhrrphslrsocgakzehp.supabase.co/rest/v1/",
+  supabaseAnonKey: "sb_publishable_mEEKeXJgTBHE6VOYyPfluQ_7UjZ6gfa"
 };
